@@ -1,6 +1,6 @@
-streamlit==1.42.0
-networkx==3.4.2
-matplotlib==3.10.0
-pandas==2.2.3
-numpy==2.2.3
-simpy==4.1.1
+streamlit
+networkx
+matplotlib
+pandas
+numpy
+simpy
