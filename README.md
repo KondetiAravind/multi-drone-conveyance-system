@@ -1,6 +1,5 @@
-```markdown
-# 🛸 Assessment of Waiting Time in a Multi-Drone Conveyance System  
-**with Time-Based (Shortest-Time) Path Selection**
+# 🛸 Assessment of Waiting Time in a Multi-Drone Conveyance System
+## with Time-Based (Shortest-Time) Path Selection
 
 **TP-8 | Team 8**  
 **Advanced Computer Networks Course**  
@@ -12,9 +11,10 @@ The system is delivered as a **fully interactive web application** that allows u
 
 ---
 
-## 🚀 Live Demo
+# 🚀 Live Demo
+
 **Deployed Application (Streamlit Cloud)**  
-👉 [https://multi-drone-conveyance-system.streamlit.app/](https://multi-drone-conveyance-system.streamlit.app/)
+👉 https://multi-drone-conveyance-system.streamlit.app/
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/KondetiAravind/multi-drone-conveyance-system/main/assets/network_visualization.png" width="700" alt="Interactive Network Visualization">
@@ -22,48 +22,53 @@ The system is delivered as a **fully interactive web application** that allows u
 
 ---
 
-## 📌 Project Objectives
-- Quantify **waiting time** and **end-to-end delay** under shortest-time routing
-- Identify **bottleneck charging stations**
-- Compute **effective arrival rate (λ_k)** at each station
-- Compare **theoretical M/M/1 results** with **discrete-event simulation**
+# 📌 Project Objectives
+
+- Quantify **waiting time** and **end-to-end delay** under shortest-time routing  
+- Identify **bottleneck charging stations**  
+- Compute **effective arrival rate (λ_k)** at each station  
+- Compare **theoretical M/M/1 results** with **discrete-event simulation**  
 - Provide a fully interactive network builder (no hard-coded topology)
 
 ---
 
-## 🧠 System Features
-- **Routing**: Shortest-time path using static edge weights (Dijkstra)
-- **Service**: FCFS at every charging station
-- **Queuing Model**: Independent M/M/1 queues
-- **Simulation**: Discrete-event simulation using SimPy
+# 🧠 System Features
+
+- **Routing**: Shortest-time path using static edge weights (Dijkstra)  
+- **Service**: FCFS at every charging station  
+- **Queuing Model**: Independent M/M/1 queues  
+- **Simulation**: Discrete-event simulation using SimPy  
 - **Visualization**: Clean layered graph with curved edges and staggered nodes
 
 **Key Insight**: Deterministic shortest-time routing leads to severe uneven load distribution even though every drone individually chooses the "fastest" path.
 
 ---
 
-## 📊 Generated Outputs
-- Identification of bottleneck charging stations
-- Effective arrival rate λ_k at each station
-- Average waiting time (bottleneck vs non-bottleneck)
-- Average end-to-end delay per drone (Theoretical + Simulated)
+# 📊 Generated Outputs
+
+- Identification of bottleneck charging stations  
+- Effective arrival rate λ_k at each station  
+- Average waiting time (bottleneck vs non-bottleneck)  
+- Average end-to-end delay per drone (Theoretical + Simulated)  
 - Downloadable ZIP containing network diagram, bar graph, and CSV results
 
 ---
 
-## 🖥️ Web Application Features
-- Start with **completely empty network**
-- One-click buttons to add Sources, Charging Stations, Destinations
-- Draw arrowed connections with travel time
-- **Load Minimal Default Network** button (realistic 6S + 8CS + 6D topology)
-- Real-time layered visualization (Sources left | CS middle | Destinations right)
-- One-click **Theoretical + Simulation Analysis**
-- Bar graph with exact values displayed on bars
+# 🖥️ Web Application Features
+
+- Start with **completely empty network**  
+- One-click buttons to add Sources, Charging Stations, Destinations  
+- Draw arrowed connections with travel time  
+- **Load Minimal Default Network** button (realistic 6S + 8CS + 6D topology)  
+- Real-time layered visualization (Sources left | CS middle | Destinations right)  
+- One-click **Theoretical + Simulation Analysis**  
+- Bar graph with exact values displayed on bars  
 - Download complete project folder as ZIP
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
+
 ```
 multi-drone-conveyance-system/
 ├── app.py                      # Main Streamlit web application
@@ -85,7 +90,8 @@ multi-drone-conveyance-system/
 
 ---
 
-## ⚙️ Local Setup
+# ⚙️ Local Setup
+
 ```bash
 git clone https://github.com/KondetiAravind/multi-drone-conveyance-system.git
 cd multi-drone-conveyance-system
@@ -98,52 +104,58 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run Locally
+# ▶️ Run Locally
+
 ```bash
 streamlit run app.py
 ```
+
 Open in browser: `http://localhost:8501`
 
 ---
 
-## 🌐 Deployment Details
-- **Platform**: Streamlit Community Cloud
-- **Repository**: https://github.com/KondetiAravind/multi-drone-conveyance-system
-- **Live URL**: https://multi-drone-conveyance-system.streamlit.app/
+# 🌐 Deployment Details
+
+- **Platform**: Streamlit Community Cloud  
+- **Repository**: https://github.com/KondetiAravind/multi-drone-conveyance-system  
+- **Live URL**: https://multi-drone-conveyance-system.streamlit.app/  
 - **Deployment**: Automatic on every push to `main`
 
 ---
 
-## 🎯 Key Highlights
-- Fully interactive network builder (add/remove nodes and edges)
-- Clean layered visualization with curved paths and staggered nodes
-- Theoretical vs Simulation comparison with high accuracy
-- Professional downloadable results (network diagram + bar graph + CSV)
+# 🎯 Key Highlights
+
+- Fully interactive network builder (add/remove nodes and edges)  
+- Clean layered visualization with curved paths and staggered nodes  
+- Theoretical vs Simulation comparison with high accuracy  
+- Professional downloadable results (network diagram + bar graph + CSV)  
 - Complete modular codebase for academic transparency
 
 ---
 
-## 🧑‍🎓 Academic Context (Term Project – Advanced Computer Networks)
+# 🧑‍🎓 Academic Context (Term Project – Advanced Computer Networks)
+
 **Course**: Advanced Computer Networks (ACN)  
 **Project Number**: TP-8  
-**Mentor**: Satwik Mondal  
+**Mentor**: Satwik Mondal
 
 This project demonstrates practical application of:
-- Graph algorithms (shortest path)
-- Queuing theory (M/M/1)
-- Discrete-event simulation
-- Performance analysis of real-world drone delivery networks
+
+- Graph algorithms (shortest path)  
+- Queuing theory (M/M/1)  
+- Discrete-event simulation  
+- Performance analysis of real-world drone delivery networks  
 - Impact of deterministic routing on congestion
 
 ---
 
-## 👥 Team 8
+# 👥 Team 8
 
 ---
 
-## 📜 License
+# 📜 License
+
 This project is developed for **academic and educational purposes** as part of the Advanced Computer Networks course at IIT Bhubaneswar.
 
 ---
-
 ---
