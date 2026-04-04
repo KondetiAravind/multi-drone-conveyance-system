@@ -1,0 +1,38 @@
+# Virtual Environment
+drone_env/
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Simulation outputs (CSV, plots, results - common for your drone project)
+*.csv
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.mat
+results/
+output/
+plots/
+data/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

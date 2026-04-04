@@ -1,0 +1,85 @@
+cd /home/aravind/SEM_8/ACN_Theory/PROJECT/
+
+# 1. Create new clean environment
+python3 -m venv drone_env
+
+# 2. Activate it
+source drone_env/bin/activate
+
+# 3. Upgrade pip (good practice)
+pip install --upgrade pip
+
+# 4. Create requirements.txt (copy-paste exactly)
+cat > requirements.txt << EOF
+streamlit==1.42.0
+networkx==3.4.2
+matplotlib==3.10.0
+pandas==2.2.3
+numpy==2.2.3
+simpy==4.1.1
+EOF
+
+# 5. Install everything inside the new env
+pip install -r requirements.txt
+
+echo "✅ New environment 'drone_env' created and all packages installed."
+
+
+PHASE 1
+
+parameters.py
+graph_builder.py
+app.py
+phase1_validate.py
+
+# Still inside drone_env
+python phase1_validate.py
+streamlit run app.py
+
+PHASE 2
+
+shortest_path.py
+theoretical_analysis.py
+phase2_run.py
+
+python phase2_run.py
+
+PHASE 3
+
+simulation.py
+phase3_run.py
+
+python phase3_run.py
+
+PHASE 4 Deployment
+Updated app.py
+streamlit run app.py
+
+Push Your Final Code to GitHub
+
+cd /home/aravind/SEM_8/ACN_Theory/PROJECT/
+
+# Initialize git (if not already done)
+git init
+
+# Add the final files
+git add app.py
+
+# Create requirements.txt (required for Streamlit Cloud)
+cat > requirements.txt << 'EOF'
+streamlit==1.42.0
+networkx==3.4.2
+matplotlib==3.10.0
+pandas==2.2.3
+numpy==2.2.3
+simpy==4.1.1
+EOF
+git add requirements.txt
+
+# Commit
+git commit -m "Final Team-8 Multi-Drone Conveyance System - Ready for deployment"
+
+# Add your repo as remote and push
+git remote add origin https://github.com/KondetiAravind/multi-drone-conveyance-system.git
+git branch -M main
+git push -u origin main
