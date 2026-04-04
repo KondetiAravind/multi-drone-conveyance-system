@@ -16,10 +16,6 @@ The system is delivered as a **fully interactive web application** that allows u
 **Deployed Application (Streamlit Cloud)**  
 👉 https://multi-drone-conveyance-system.streamlit.app/
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/KondetiAravind/multi-drone-conveyance-system/main/assets/network_visualization.png" width="700" alt="Interactive Network Visualization">
-</p>
-
 ---
 
 # 📌 Project Objectives
